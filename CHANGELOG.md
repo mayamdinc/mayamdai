@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.1
+
+- Update dependencies
+
 ## 1.5.0
 
 - Update dependencies, ws from 7.x to 8.x
