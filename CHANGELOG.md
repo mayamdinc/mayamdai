@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.3
+
+- Fix error in README
+
 ## 1.5.2
 
 - Fix errors in README

@@ -66,7 +66,7 @@ const run = async () => {
   try {
     const params: ApiParams = {
       apiKey: MAYA_ENGINE_API_KEY,
-      apiSecret: MAYA_ENGINE_API_SECRET
+      apiSecret: MAYA_ENGINE_API_SECRET,
       requestType: "searchSymptom",
       term: "head",
     };
