@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.4
+
+- Add missing dependency
+
 ## 1.5.3
 
 - Fix error in README

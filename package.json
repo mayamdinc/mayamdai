@@ -1,6 +1,6 @@
 {
   "name": "mayamdai",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "description": "Maya client library for MayaEngine",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -32,6 +32,7 @@
   "engineStrict": true,
   "dependencies": {
     "axios": "^0.27.2",
+    "debug": "^4.3.4",
     "ws": "^8.6.0"
   },
   "optionalDependencies": {
