@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.5.2
+
+- Fix errors in README
+
 ## 1.5.1
 
 - Update dependencies

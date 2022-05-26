@@ -43,7 +43,7 @@ const run = async () => {
     console.log("OUTPUT:", output);
     await close();
   } catch (error) {
-    console.error("ERROR:", ERROR);
+    console.error("ERROR:", error);
   }
 }
 
@@ -73,7 +73,7 @@ const run = async () => {
     const output = await requestHttp(params, HTTPS_API_URL);
     console.log("OUTPUT:", output);
   } catch (error) {
-    console.error("ERROR:", ERROR);
+    console.error("ERROR:", error);
   }
 }
 
@@ -101,7 +101,7 @@ const run = async () => {
     console.log("OUTPUT:", output);
     await close();
   } catch (error) {
-    console.error("ERROR:", ERROR);
+    console.error("ERROR:", error);
   }
 }
 
