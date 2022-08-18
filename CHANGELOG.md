@@ -1,5 +1,11 @@
 # Change Logs
 
+## 1.6.0
+
+- Offline algorithm
+- Zscore
+- Update dependencies
+
 ## 1.5.4
 
 - Add missing dependency

@@ -263,9 +263,27 @@ run();
     - diagnoses (Diagnosis[]) - differential diagnosis (except when contextOnly is true)
     - triages (TriageOutput[]) - triage (except when contextOnly is true)
     - recommendation (Recommendation) - lab and physical examination recommendations (except when contextOnly is true)
-    - contexts (ContextOutput[]) - Contexts applicable for the case (only when contextOnly is true)
+    - contexts (ContextOutput[]) - contexts applicable for the case (only when contextOnly is true)
+    - zscore (ZscoreOutput) - WHO Zscores for the individual
 
-15. noop - no operation, just returns a success result. Used by the client library to verify authentication in HTTP mode.
+15. getNames - get the names of entities in the specified language
+
+    Params:
+    - idsForNames (GetNamesInput) - IDs of entities
+    - language (string, optional) - language code for the language in which to return the results
+
+    Output:
+    - names (GetNamesOutput) - the names of entities
+
+16. getAlgorithm - get the clinical algorithm data for offline traversal
+
+    Params:
+    - input (ApiInput) - input data, mainly the algorithm symptom ID(s) required
+
+    Output:
+    - algorithm (Algorithm) - the algorithm data
+
+17. noop - no operation, just returns a success result. Used by the client library to verify authentication in HTTP mode.
 
 ## Events
 
