@@ -1,6 +1,10 @@
 # Change Logs
 
-## 1.6.0
+## 1.12.1
+
+- Update mayaengine-types
+
+## 1.12.0
 
 - Offline algorithm
 - Zscore
