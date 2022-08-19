@@ -1987,10 +1987,10 @@ makeerror@1.0.12:
   dependencies:
     tmpl "1.0.5"
 
-mayaengine-types@^2.19.0:
-  version "2.19.0"
-  resolved "https://registry.yarnpkg.com/mayaengine-types/-/mayaengine-types-2.19.0.tgz#92d66b788416ece3665b9d9595335621495a9021"
-  integrity sha512-pbi276MgVOnZiusRG2Hl+WI9n3VZrWpXD4kMxInEgoKScn9MNbnL4f5zbkhoyFSILpPh/LEcwj5oR6FAt6B85w==
+mayaengine-types@^2.20.0:
+  version "2.20.0"
+  resolved "https://registry.yarnpkg.com/mayaengine-types/-/mayaengine-types-2.20.0.tgz#bbcde509d4cfbd33bec287b5d0ebbfc592c723e4"
+  integrity sha512-0ZK322mNkCULn7I6GlqnA6zvZ5aVFe6IMtWgBgEB2f6qC03xElGnVTa6/5q+mlYiV8lRYJUqI0XXroiHSM3A3w==
 
 merge-stream@^2.0.0:
   version "2.0.0"
