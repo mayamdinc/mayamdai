@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.12.4
+
+- Update dependencies
+
 ## 1.12.3
 
 - Update mayaengine-types
