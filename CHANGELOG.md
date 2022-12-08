@@ -1,5 +1,9 @@
 # Change Logs
 
+## 1.12.5
+
+- Update dependencies
+
 ## 1.12.4
 
 - Update dependencies
