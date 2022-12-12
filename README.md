@@ -283,7 +283,14 @@ run();
     Output:
     - algorithm (Algorithm) - the algorithm data
 
-17. noop - no operation, just returns a success result. Used by the client library to verify authentication in HTTP mode.
+17. getZscoreTables - get the Zscore tables for offline traversal
+
+    Params: <None)
+
+    Output:
+    - zscoreTables (Zscore tables) - the Zscore table data
+
+18. noop - no operation, just returns a success result. Used by the client library to verify authentication in HTTP mode.
 
 ## Events
 

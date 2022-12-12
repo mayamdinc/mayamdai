@@ -1,6 +1,6 @@
 {
   "name": "mayamdai",
-  "version": "1.12.5",
+  "version": "1.12.6",
   "description": "Maya client library for MayaEngine",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -44,7 +44,7 @@
     "@types/jest": "^29.2.4",
     "@types/ws": "^8.5.3",
     "jest": "^29.3.1",
-    "mayaengine-types": "^2.24.0",
+    "mayaengine-types": "^2.25.0",
     "pre-commit": "^1.2.2",
     "pre-push": "^0.1.4",
     "ts-jest": "^29.0.3",
