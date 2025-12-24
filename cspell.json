@@ -12,7 +12,7 @@
     "automock",
     "unmocked",
     "serializers",
-    "preop"
+    "preop",
+    "zscore"
   ],
-  "flagWords": ["hte"]
 }

@@ -322,7 +322,7 @@ const close = () => {
         httpModeConfig = null;
         return Promise.resolve("Closed");
     }
-    return new Promise((resolve, _reject) => {
+    return new Promise((resolve) => {
         if (ws) {
             debug("Closing");
             // Stop ping

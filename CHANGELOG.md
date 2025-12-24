@@ -1,5 +1,10 @@
 # Change Logs
 
+## 1.12.7
+
+- Update dependencies
+- Update mayaengine-types (Algorithm score)
+
 ## 1.12.6
 
 - Update mayaengine-types (Zscore API)

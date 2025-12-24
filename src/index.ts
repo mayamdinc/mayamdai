@@ -44,7 +44,7 @@ interface QueueEntry {
 
 interface ResolveReject {
   resolve: (value: ApiOutput | PromiseLike<ApiOutput>) => void;
-  reject: (reason?: any) => void;
+  reject: (reason?: unknown) => void;
 }
 
 export const connect: (
@@ -425,7 +425,7 @@ export const close: () => Promise<string> = () => {
     return Promise.resolve("Closed");
   }
 
-  return new Promise((resolve, _reject) => {
+  return new Promise((resolve) => {
     if (ws) {
       debug("Closing");
       // Stop ping

@@ -4,8 +4,8 @@ import type { ApiParams } from "mayaengine-types";
 
 const WSS_URL = process.env.WSS_URL || "wss://mayaengine-dev.mayamd.ai";
 const HTTPS_URL = process.env.WSS_URL || "https://mayaengine-dev.mayamd.ai";
-const API_KEY = process.env.API_KEY;
-const API_SECRET = process.env.API_SECRET;
+const API_KEY = process.env.API_KEY || "";
+const API_SECRET = process.env.API_SECRET || "";
 const MISSING_AUTH_ERROR = "Authentication failed: Missing API key or secret";
 const INVALID_KEY_ERROR = "Authentication failed: Invalid API key";
 const MISSING_AUTH_HTTP_ERROR = "Server error (401): Missing API key or secret";
@@ -82,7 +82,7 @@ describe("websocket", () => {
       expect(output).toBeDefined();
       expect(output.error).toBe(false);
       expect(output.result).toBeDefined();
-      expect(output.result.length).toBeGreaterThan(0);
+      expect(output.result?.length).toBeGreaterThan(0);
     });
 
     it("should get a full response for an analyze request without partial enabled", async () => {
@@ -105,9 +105,9 @@ describe("websocket", () => {
       expect(output.error).toBe(false);
       expect(output.partType).not.toBeDefined();
       expect(output.diagnoses).toBeDefined();
-      expect(output.diagnoses.length).toBeGreaterThan(0);
+      expect(output.diagnoses?.length).toBeGreaterThan(0);
       expect(output.triages).toBeDefined();
-      expect(output.triages.length).toBeGreaterThan(0);
+      expect(output.triages?.length).toBeGreaterThan(0);
       await new Promise((r) => setTimeout(r, 2000)); // wait for 2 seconds
       expect(partialCallback).not.toHaveBeenCalled();
     });
@@ -133,7 +133,7 @@ describe("websocket", () => {
       expect(output.error).toBe(false);
       expect(output.partType).toBe("diagnoses");
       expect(output.diagnoses).toBeDefined();
-      expect(output.diagnoses.length).toBeGreaterThan(0);
+      expect(output.diagnoses?.length).toBeGreaterThan(0);
       await new Promise((r) => setTimeout(r, 2000)); // wait for 2 seconds
       expect(partialCallback).toHaveBeenCalled();
     });
@@ -185,7 +185,7 @@ describe("http", () => {
       expect(output).toBeDefined();
       expect(output.error).toBe(false);
       expect(output.result).toBeDefined();
-      expect(output.result.length).toBeGreaterThan(0);
+      expect(output.result?.length).toBeGreaterThan(0);
     });
   });
 
@@ -254,7 +254,7 @@ describe("http", () => {
       expect(output).toBeDefined();
       expect(output.error).toBe(false);
       expect(output.result).toBeDefined();
-      expect(output.result.length).toBeGreaterThan(0);
+      expect(output.result?.length).toBeGreaterThan(0);
     });
 
     afterAll((done) => {
